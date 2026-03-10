@@ -1,0 +1,23 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+# --- NEW STUFF BELOW ---
+
+# Sets the Solidity compiler version (matching your contract)
+solc_version = "0.8.13" 
+
+# Enables the optimizer to make your contracts cheaper to deploy
+optimizer = true
+optimizer_runs = 200
+
+# Automatically shows how much gas each function uses after tests
+gas_reports = ["*"]
+
+# Useful for Windows: ensures line endings don't cause git issues
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = true
